@@ -51,26 +51,85 @@ main {
 }
 
 #login {
-    width: 90%;
-    height: 90%;
+    height: 95vh;
+    width: 95vw;
     background-color: var(--cor-vermelho);
     border-radius: 20px;
     overflow: hidden;
-
 }
 
 #image {
-    display: block;
-    background: url(../images/pexels-apasaric-2603464.jpg) no-repeat;
+    height: 40vh;
+    background: url(../images/pexels-apasaric-2603464.jpg) no-repeat center center;
     background-size: cover;
-    height: 300px;
 }
 
 #formulario {
-    color: var(--cor-amareloclaro);
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 1em;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em 0 1em 1em;
 }
+
+.form {
+    font-size: 1.2em;
+    color: var(--cor-amareloclaro);
+}
+
+.login {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+.login .logcreate {
+    width: 100%;
+    }
+
+.login .logcreate input {
+    width: 100%;
+    padding: 0.6em 1.5em;
+    background: transparent;
+    border: 3px solid var(--cor-amareloclaro);
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+  }
+
+.login .logcreate input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(45deg, #ff357a, #fff172);
+    border: none;
+    cursor: pointer;
+  }
+
+.login .logcreate input[type="submit"]:hover {
+    color: #ff357a;
+  }
+
+.login .logcreate input::placeholder {
+    color: var(--cor-amareloclaro);
+  }
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    color: var(--cor-amareloclaro);
+  }

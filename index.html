@@ -12,13 +12,34 @@
         <section id="login">
 
             <div id="image">
-                
+
             </div>
 
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja Bem-Vindo(a) novamente. Faça login para acessar</p>
+                <div class="form">
+                    <h1>Login</h1>
+                    <p>Seja Bem-Vindo(a) novamente. Faça login para acessar</p>
+                </div>
+
+                <form class="login" action="login.php" method="post">
+                    <div class="logcreate">
+                        <input type="email" name="login" id="ilogin" required placeholder="Username">
+                    </div>
+                    <div class="logcreate">
+                        <input type="password" name="password" id="ipassword" required max="15" min="8" placeholder="Password">
+                    </div>
+                    <div class="logcreate">
+                        <input type="submit" value="Sign in">
+                    </div>
+                
+                    <div class="links">
+                    <a href="##">Signup</a>
+                    <a href="##">Forget Password</a>
+                    </div>
+                </form>
             </div>
+
+            
 
         </section>
     </main>
